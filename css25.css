@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #0062be;
+
+}
+#nav{
+
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.logo{
+    
+    width: 80px;
+    height: 80px;
+}
+#nav ul{
+    display: flex;
+    align-items: flex-end;
+  }
+#nav li{
+   list-style: none;
+
+}
+#nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+#content{
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height:100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#text{
+    position: relative;
+    width: 50%;
+
+}
+#text h2{
+    color:#fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#text h2 span{
+    font-size: 2em;
+
+}
+#text p{
+    color:#fff;
+
+}
+#text a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+}
+ #content #imgbox{
+    display: flex;
+
+
+}
+#imgbox img{
+    height: 500px;
+}
+#thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+    margin: 0px 20px;
+    cursor: pointer;
+    display: inline-block;
+   }
+#thumb img:hover{
+    transform: translateY(-15px);
+}
+#thumb img{
+    width: 70px;
+    margin-left: 40px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+   
+}
+
+#icon{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#icon i{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
